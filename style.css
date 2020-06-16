@@ -125,129 +125,174 @@ body {
 .sub-name {
     font-family: 'Cutive Mono', monospace;
     font-size: 1rem;
+    /*font size*/
     opacity: .8;
     color: rgba(255, 255, 255, 0.712);
+    /*text color*/
 }
 
+/*class for card content*/
 .content {
     display: flex;
     padding: 1.7rem 2.5rem 2.6rem 2.5rem;
 }
 
+/*class for the right hand side*/
 .right {
     padding-top: 1.5rem;
     display: flex;
     flex-direction: column;
+    /*using flex and column direction*/
     text-align: right;
     align-items: flex-end;
+    /*align the items at the end*/
     justify-content: space-between;
+    /*equal space*/
     margin-left: 2.1rem;
 }
 
-.number {
-    font-size: 2.1rem;
+/*for the number on the right hand side*/
+.num {
+    font-size: 2.2rem;
     font-weight: 200;
     color: rgba(255, 255, 255, 0.712);
     line-height: 1.2;
 }
 
-.number-title {
+/* subtitle on number right hand side*/
+.num-sub {
     font-size: .55rem;
     color: rgba(255, 255, 255, 0.712);
     font-weight: 400;
+    /*font strength visibility*/
     line-height: 1;
     letter-spacing: 1px;
+    /*space between every letter*/
     text-transform: uppercase;
+    /*all text upper case*/
 }
 
-.title {
+/*about me title*/
+.title-about {
     position: relative;
     color: rgba(255, 255, 255, 0.712);
     font-weight: 500;
-    font-size: 1.1rem;
-    padding: 0 0 3px 0;
-    margin-bottom: .9rem;
+    /*font strength*/
+    font-size: 1.2rem;
+    padding: 0 0 2.5px 0;
+    margin-bottom: .8rem;
     display: inline-block;
+    /*displaying inline with block*/
 }
 
-
-.text {
+/*for description on about*/
+.desc {
     color: rgb(73, 73, 73);
-    font-weight: 300;
-    line-height: 1.7;
+    font-weight: 350;
+    /*font strength*/
+    line-height: 1.6;
 }
 
-.icons-container {
-    padding: 1rem 0;
+/*container class for the icons*/
+.icon-container {
+    padding: 1.1rem 0;
 }
 
+/*class for icon*/
 .icon {
     color: #e9e5e5;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    /*icon size*/
     text-decoration: none;
-    margin-right: 8px;
-    transition: .3s;
+    /*no text decoration*/
+    margin-right: 7.5px;
+    /*margin on the right side*/
+    transition: .3s all ease-in-out;
+    /*transition duration*/
 }
 
+/*on mouse click*/
 .icon:hover {
     color: #525151d3;
 }
 
-.buttons-wrap {
+/*class for button*/
+.buttons-wrapper {
     display: flex;
     margin-top: 5px;
 }
 
-
-.share-wrap {
-    flex: 4;
+/*cv button class*/
+.cv-wrapper {
+    flex: 1;
+    /*for the text to spread*/
     display: flex;
     justify-content: center;
+    /*content on center*/
     align-items: center;
     transition: .5s;
-}
-
-.share:hover,
-.share:focus {
-    color: #ececec;
-    background-color: #d1cfcf3d;
-    transition: 1s all ease-in-out;
+    /*transition duration*/
 }
 
 
-.share {
-    padding: 7.6px 0;
+.resume {
+    padding: 7.5px 0;
     width: 100%;
+    /*get cv- width*/
     border: 2px solid rgb(253, 179, 19);
-    color: rgb(37, 37, 37);
+    /*solid border around the button*/
+    color: rgba(37, 37, 37, 0.822);
     text-decoration: none;
     text-align: center;
-    font-size: .7rem;
-    font-weight: bold;
+    /*text-aligned at center*/
+    font-size: .9rem;
+    font-weight: 550;
+    /*font-strength*/
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-left: 3px;
     border-radius: 18.1px;
 }
 
-.modal {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: -1;
-    opacity: 0;
-    transition: .5s;
+.resume:hover,
+.resume:focus {
+    color: #ececec;
+    /*changed text color*/
+    background-color: #d1cfcf3d;
+    /*after mouse placing bg color will be this*/
+    transition: 1s all ease-in-out;
+    /*transition duration all ease in out*/
 }
 
+
+.modal {
+    position: fixed;
+    /*modal will be in a fixed position*/
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.74);
+    z-index: -1;
+    /*stacking order*/
+    opacity: 0;
+    transition: .5s;
+    /*transition duration*/
+}
+
+/*class for the image of modal window*/
 .modal img {
     position: fixed;
+    /*image position fixed*/
     top: 25%;
+    /*25% on top image position*/
     left: 50%;
+    /*50%on left image position*/
     transform: translate(-50%, -50%) scale(.3);
+    /*to place the image on center*/
     max-width: 100%;
     max-height: 100%;
+    /*max width and height for the img*/
     transition: .5s;
+    /*transition duraaion*/
 }
 
 .modal.show {
