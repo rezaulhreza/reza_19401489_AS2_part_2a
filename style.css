@@ -337,16 +337,20 @@ This is for mobile screen*/
         flex-direction: column;
     }
 
+    /*class for content on the right*/
     .right {
         flex-direction: row;
+        /*items directed towards row*/
         text-align: center;
         justify-content: space-around;
+        /*alignment along the main axis around the items*/
         align-items: center;
         margin: 0;
     }
 }
 
-@media (max-width: 370px) {
+/*media queries for screen which have maximum of 380 px width*/
+@media (max-width: 380px) {
     .header {
         height: 230px;
     }
@@ -357,53 +361,62 @@ This is for mobile screen*/
         border-width: 3px;
     }
 
+    /*class for name and sub title*/
     .name,
     .sub-name {
         font-size: 1rem;
+        /*font size reduced*/
     }
 
-    .content {
+    /*card-content on smaller screen*/
+    .card-content {
         padding: 1.2rem 1.8rem 1.8rem 1.8rem;
     }
 
-    .number {
-        font-size: 1.8rem;
+    /*number on the right hand side*/
+    .num {
+        font-size: 1.7rem;
     }
 
-    .number-title {
-        font-size: .4rem;
+    /*number subtitle on the right hand side*/
+    .num-sub {
+        font-size: .5rem;
+        /*font size on smaller screen*/
     }
 
+    /*content on the right padding top*/
     .right {
         padding-top: 1rem;
     }
 
-    .title {
+    /*about heading on smaller screen*/
+    .title-about {
         font-size: .9rem;
         margin-bottom: .5rem;
+        /*bottom margin on smalller screen*/
     }
 
-    .text {
-        font-size: .8rem;
+    /*on smaller screen, description font size*/
+    .desc {
+        font-size: .9rem;
     }
 
-    .icons-container {
-        padding: .5rem 0;
+    /*icon padding on smaller screen*/
+    .icon-container {
+        padding: .4rem 0;
     }
 
+    /*icon size*/
     .icon {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
-    .follow {
-        padding: 7.6px 0;
-        border-radius: 14.6px;
-        font-size: .6rem;
-    }
-
-    .share {
-        padding: 5.6px 0;
-        border-radius: 14.6px;
+    /* get cv button text*/
+    .resume {
+        padding: 5.5px 0;
+        /*padding of the text*/
+        border-radius: 14.5px;
+        /*outer border edge round shape*/
         font-size: .6rem;
     }
 }
