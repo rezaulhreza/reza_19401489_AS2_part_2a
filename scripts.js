@@ -18,9 +18,16 @@ function show() {
   hover.classList.add('active');
   modal.classList.add('show');
 }
-/*after clicking on the icon the photo will show up as a modal window. adding the image into the modal*/
+/*after clicking on the icon the photo will show up as a modal window. adding the image into the modal
+The close button will appear but will not work*/
 
 
+function hide() {
+  hover.classList.remove('active');
+  modal.classList.remove('show'); /*this will activate the close icon, event will take place after clicking the mouse*/
+}
 
 image.addEventListener('click', show);
+/*Targeting method , setting up the  show function which is called when the click event is delivered. The image will show up by this*/
 close.addEventListener('click', hide);
+/*Targeting method , setting up the  hide function which is called when the click event is delivered. Close button will take place and upon clicking on it, the modal window will be closed*/
