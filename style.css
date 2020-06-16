@@ -132,7 +132,7 @@ body {
 }
 
 /*class for card content*/
-.content {
+.card-content {
     display: flex;
     padding: 1.7rem 2.5rem 2.6rem 2.5rem;
 }
@@ -292,55 +292,48 @@ body {
     max-height: 100%;
     /*max width and height for the img*/
     transition: .5s;
-    /*transition duraaion*/
+    /*transition duration*/
 }
 
+/*modal show class when popping up*/
 .modal.show {
     opacity: 1;
     z-index: 99;
 }
 
+/*modal image after popping up*/
 .modal.show img {
     top: 50%;
+    /*top margin edge is 50% far from the position*/
     transform: translate(-50%, -50%) scale(1);
 }
 
+/*close icon class*/
 .close {
     position: fixed;
+    /*fix position */
     top: 1rem;
+    /*1 rem top from the fix position*/
     right: 1rem;
+    /* 1 rem right from the position*/
     width: 30px;
     height: 30px;
+    color: #ececec;
     cursor: pointer;
+    /*cursor pointing for a link*/
     transition: .3s;
+    /* transition duration*/
 }
 
+/* mouse hovering*/
 .close:hover {
     opacity: .5;
 }
 
-.close:before,
-.close:after {
-    content: '';
-    position: fixed;
-    width: 100%;
-    height: 3px;
-    border-radius: 1.5px;
-    top: 50%;
-    left: 50%;
-    background-color: rgba(255, 255, 255, 0.027);
-}
-
-.close:before {
-    transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.close:after {
-    transform: translate(-50%, -50%) rotate(135deg);
-}
-
-@media (max-width: 410px) {
-    .content {
+/*media queries for screen of maximum width 600px
+This is for mobile screen*/
+*/ @media (max-width: 600px) {
+    .card-content {
         flex-direction: column;
     }
 
