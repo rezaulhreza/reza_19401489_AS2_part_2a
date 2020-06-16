@@ -59,31 +59,38 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
+    /*widht height set to 100%*/
     top: 0;
     left: 0;
     display: flex;
     /*items displayed using flex*/
     flex-direction: column;
+    /*column based approach*/
     justify-content: center;
     align-items: center;
+    /*all items are on center*/
 }
 
+/*for the profile image on the main class*/
 .main .image {
     position: relative;
     width: 110px;
     height: 110px;
     border-radius: 50%;
+    /*background image from local storage*/
     background: url('images/image1.png') no-repeat center / cover;
-    filter: grayscale(1%);
     margin-bottom: 2px;
     overflow: hidden;
     cursor: pointer;
+    /*cursor is set to pointer to indicate a link*/
 }
 
+/*after placing the mouse on the profile picture*/
 .image .hover {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
+    /*width height set to 100%*/
     top: 0;
     left: 0;
     filter: blur(0);
@@ -92,9 +99,11 @@ body {
     align-items: center;
     color: #fff;
     transition: .5s;
+    /*transition duration .5s*/
     opacity: 0;
 }
 
+/*opacity is set to 1 when mouse is placed*/
 .image:hover .hover {
     opacity: 1;
 }
@@ -103,6 +112,7 @@ body {
     opacity: 1;
 }
 
+/*name heading class*/
 .name {
     font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.856);
@@ -111,6 +121,7 @@ body {
     margin: 5px 0;
 }
 
+/*sub title*/
 .sub-name {
     font-family: 'Cutive Mono', monospace;
     font-size: 1rem;
