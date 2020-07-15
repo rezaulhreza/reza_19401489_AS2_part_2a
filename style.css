@@ -1,422 +1,418 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 /*body class*/
 body {
-    background-color: rgba(255, 255, 255, 0.445);
+  background-color: rgba(255, 255, 255, 0.445);
 }
 
 /*container class for the card*/
 .card-container {
-    padding: 20px;
-    display: flex;
-    /*flex layout on card*/
-    justify-content: center;
-    /*content at center*/
-    align-items: center;
-    min-height: 100vh;
-    /*100 vh as min height*/
-    background-image: linear-gradient(to top, #024572a8, #00b6fe94);
-
+  padding: 20px;
+  display: flex;
+  /*flex layout on card*/
+  justify-content: center;
+  /*content at center*/
+  align-items: center;
+  min-height: 100vh;
+  /*100 vh as min height*/
+  background-image: linear-gradient(to top, #024572a8, #00b6fe94);
+  /*background color set as linear gradient creating two color types*/
 }
 
 /*main card*/
 .card-area {
-    position: relative;
-    width: 500px;
-    border-radius: 5px;
-    /*5px outer border edge*/
-    box-shadow: 0 5px 15px 1px rgba(185, 185, 185, 0.308);
-    overflow: hidden;
-
+  position: relative;
+  width: 500px;
+  border-radius: 5px;
+  /*5px outer border edge*/
+  box-shadow: 0 5px 15px 1px rgba(185, 185, 185, 0.308);
+  overflow: hidden;
 }
 
-
 .underline {
-    border: 1px solid rgb(253, 179, 19);
-    width: 50%;
-    margin: 0 10px;
+  border: 1px solid rgb(253, 179, 19);
+  width: 50%;
+  margin: 0 10px;
 }
 
 .underline-2 {
-    border: 1px solid rgb(253, 179, 19);
-    width: 60%;
-    margin: 0 10px;
+  border: 1px solid rgb(253, 179, 19);
+  width: 60%;
+  margin: 0 10px;
 }
 
 /*header class for the header of the card*/
 .header {
-    position: relative;
-    height: 265px;
+  position: relative;
+  height: 265px;
 }
 
 /*class for the main part of the card*/
 .main {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    /*widht height set to 100%*/
-    top: 0;
-    left: 0;
-    display: flex;
-    /*items displayed using flex*/
-    flex-direction: column;
-    /*column based approach*/
-    justify-content: center;
-    align-items: center;
-    /*all items are on center*/
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*widht height set to 100%*/
+  top: 0;
+  left: 0;
+  display: flex;
+  /*items displayed using flex*/
+  flex-direction: column;
+  /*column based approach*/
+  justify-content: center;
+  align-items: center;
+  /*all items are on center*/
 }
 
 /*for the profile image on the main class*/
 .main .image {
-    position: relative;
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    /*background image from local storage*/
-    background: url('images/image1.png') no-repeat center / cover;
-    margin-bottom: 2px;
-    overflow: hidden;
-    cursor: pointer;
-    /*cursor is set to pointer to indicate a link*/
+  position: relative;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  /*background image from local storage*/
+  background: url("images/image1.png") no-repeat center / cover;
+  margin-bottom: 2px;
+  overflow: hidden;
+  cursor: pointer;
+  /*cursor is set to pointer to indicate a link*/
 }
 
 /*after placing the mouse on the profile picture*/
 .image .hover {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    /*width height set to 100%*/
-    top: 0;
-    left: 0;
-    filter: blur(0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    transition: .5s;
-    /*transition duration .5s*/
-    opacity: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*width height set to 100%*/
+  top: 0;
+  left: 0;
+  filter: blur(0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: 0.5s;
+  /*transition duration .5s*/
+  opacity: 0;
 }
 
 /*opacity is set to 1 when mouse is placed*/
 .image:hover .hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .hover.active {
-    opacity: 1;
+  opacity: 1;
 }
 
 /*name heading class*/
 .name {
-    font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.856);
-    font-weight: 500;
-    line-height: 1;
-    margin: 5px 0;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.856);
+  font-weight: 500;
+  line-height: 1;
+  margin: 5px 0;
 }
 
 /*sub title*/
 .sub-name {
-    font-family: 'Cutive Mono', monospace;
-    font-size: 1rem;
-    /*font size*/
-    opacity: .8;
-    color: rgba(255, 255, 255, 0.712);
-    /*text color*/
+  font-family: "Cutive Mono", monospace;
+  font-size: 1rem;
+  /*font size*/
+  opacity: 0.8;
+  color: rgba(255, 255, 255, 0.712);
+  /*text color*/
 }
 
 /*class for card content*/
 .card-content {
-    display: flex;
-    padding: 1.7rem 2.5rem 2.6rem 2.5rem;
+  display: flex;
+  padding: 1.7rem 2.5rem 2.6rem 2.5rem;
 }
 
 /*class for the right hand side*/
 .right {
-    padding-top: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    /*using flex and column direction*/
-    text-align: right;
-    align-items: flex-end;
-    /*align the items at the end*/
-    justify-content: space-between;
-    /*equal space*/
-    margin-left: 2.1rem;
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  /*using flex and column direction*/
+  text-align: right;
+  align-items: flex-end;
+  /*align the items at the end*/
+  justify-content: space-between;
+  /*equal space*/
+  margin-left: 2.1rem;
 }
 
 /*for the number on the right hand side*/
 .num {
-    font-size: 2.2rem;
-    font-weight: 200;
-    color: rgba(255, 255, 255, 0.712);
-    line-height: 1.2;
+  font-size: 2.2rem;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.712);
+  line-height: 1.2;
 }
 
 /* subtitle on number right hand side*/
 .num-sub {
-    font-size: .55rem;
-    color: rgba(255, 255, 255, 0.712);
-    font-weight: 400;
-    /*font strength visibility*/
-    line-height: 1;
-    letter-spacing: 1px;
-    /*space between every letter*/
-    text-transform: uppercase;
-    /*all text upper case*/
+  font-size: 0.55rem;
+  color: rgba(255, 255, 255, 0.712);
+  font-weight: 400;
+  /*font strength visibility*/
+  line-height: 1;
+  letter-spacing: 1px;
+  /*space between every letter*/
+  text-transform: uppercase;
+  /*all text upper case*/
 }
 
 /*about me title*/
 .title-about {
-    position: relative;
-    color: rgba(255, 255, 255, 0.712);
-    font-weight: 500;
-    /*font strength*/
-    font-size: 1.2rem;
-    padding: 0 0 2.5px 0;
-    margin-bottom: .8rem;
-    display: inline-block;
-    /*displaying inline with block*/
+  position: relative;
+  color: rgba(255, 255, 255, 0.712);
+  font-weight: 500;
+  /*font strength*/
+  font-size: 1.2rem;
+  padding: 0 0 2.5px 0;
+  margin-bottom: 0.8rem;
+  display: inline-block;
+  /*displaying inline with block*/
 }
 
 /*for description on about*/
 .desc {
-    color: rgb(73, 73, 73);
-    font-weight: 350;
-    /*font strength*/
-    line-height: 1.6;
+  color: rgb(73, 73, 73);
+  font-weight: 300;
+  /*font strength*/
+  line-height: 1.6;
 }
 
 /*container class for the icons*/
 .icon-container {
-    padding: 1.1rem 0;
+  padding: 1.1rem 0;
 }
 
 /*class for icon*/
 .icon {
-    color: #e9e5e5;
-    font-size: 1.4rem;
-    /*icon size*/
-    text-decoration: none;
-    /*no text decoration*/
-    margin-right: 7.5px;
-    /*margin on the right side*/
-    transition: .3s all ease-in-out;
-    /*transition duration*/
+  color: #e9e5e5;
+  font-size: 1.4rem;
+  /*icon size*/
+  text-decoration: none;
+  /*no text decoration*/
+  margin-right: 7.5px;
+  /*margin on the right side*/
+  transition: 0.3s all ease-in-out;
+  /*transition duration*/
 }
 
 /*on mouse click*/
 .icon:hover {
-    color: #525151d3;
+  color: #525151d3;
 }
 
 /*class for button*/
 .buttons-wrapper {
-    display: flex;
-    margin-top: 5px;
+  display: flex;
+  margin-top: 5px;
 }
 
 /*cv button class*/
 .cv-wrapper {
-    flex: 1;
-    /*for the text to spread*/
-    display: flex;
-    justify-content: center;
-    /*content on center*/
-    align-items: center;
-    transition: .5s;
-    /*transition duration*/
+  flex: 1;
+  /*for the text to spread*/
+  display: flex;
+  justify-content: center;
+  /*content on center*/
+  align-items: center;
+  transition: 0.5s;
+  /*transition duration*/
 }
 
-
 .resume {
-    padding: 7.5px 0;
-    width: 100%;
-    /*get cv- width*/
-    border: 2px solid rgb(253, 179, 19);
-    /*solid border around the button*/
-    color: rgba(37, 37, 37, 0.822);
-    text-decoration: none;
-    text-align: center;
-    /*text-aligned at center*/
-    font-size: .9rem;
-    font-weight: 550;
-    /*font-strength*/
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-left: 3px;
-    border-radius: 18.1px;
+  padding: 7.5px 0;
+  width: 100%;
+  /*get cv- width*/
+  border: 2px solid rgb(253, 179, 19);
+  /*solid border around the button*/
+  color: rgba(37, 37, 37, 0.822);
+  text-decoration: none;
+  text-align: center;
+  /*text-aligned at center*/
+  font-size: 0.9rem;
+  font-weight: 500;
+  /*font-strength*/
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-left: 3px;
+  border-radius: 18.1px;
 }
 
 .resume:hover,
 .resume:focus {
-    color: #ececec;
-    /*changed text color*/
-    background-color: #d1cfcf3d;
-    /*after mouse placing bg color will be this*/
-    transition: 1s all ease-in-out;
-    /*transition duration all ease in out*/
+  color: #ececec;
+  /*changed text color*/
+  background-color: #d1cfcf3d;
+  /*after mouse placing bg color will be this*/
+  transition: 1s all ease-in-out;
+  /*transition duration all ease in out*/
 }
 
-
 .modal {
-    position: fixed;
-    /*modal will be in a fixed position*/
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.74);
-    z-index: -1;
-    /*stacking order*/
-    opacity: 0;
-    transition: .5s;
-    /*transition duration*/
+  position: fixed;
+  /*modal will be in a fixed position*/
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.74);
+  z-index: -1;
+  /*stacking order*/
+  opacity: 0;
+  transition: 0.5s;
+  /*transition duration*/
 }
 
 /*class for the image of modal window*/
 .modal img {
-    position: fixed;
-    /*image position fixed*/
-    top: 25%;
-    /*25% on top image position*/
-    left: 50%;
-    /*50%on left image position*/
-    transform: translate(-50%, -50%) scale(.3);
-    /*to place the image on center*/
-    max-width: 100%;
-    max-height: 100%;
-    /*max width and height for the img*/
-    transition: .5s;
-    /*transition duration*/
+  position: fixed;
+  /*image position fixed*/
+  top: 25%;
+  /*25% on top image position*/
+  left: 50%;
+  /*50%on left image position*/
+  transform: translate(-50%, -50%) scale(0.3);
+  /*to place the image on center*/
+  max-width: 100%;
+  max-height: 100%;
+  /*max width and height for the img*/
+  transition: 0.5s;
+  /*transition duration*/
 }
 
 /*modal show class when popping up*/
 .modal.show {
-    opacity: 1;
-    z-index: 99;
+  opacity: 1;
+  z-index: 99;
 }
 
 /*modal image after popping up*/
 .modal.show img {
-    top: 50%;
-    /*top margin edge is 50% far from the position*/
-    transform: translate(-50%, -50%) scale(1);
+  top: 50%;
+  /*top margin edge is 50% far from the position*/
+  transform: translate(-50%, -50%) scale(1);
 }
 
 /*close icon class*/
 .close {
-    position: fixed;
-    /*fix position */
-    top: 1rem;
-    /*1 rem top from the fix position*/
-    right: 1rem;
-    /* 1 rem right from the position*/
-    width: 30px;
-    height: 30px;
-    color: #ececec;
-    cursor: pointer;
-    /*cursor pointing for a link*/
-    transition: .3s;
-    /* transition duration*/
+  position: fixed;
+  /*fix position */
+  top: 1rem;
+  /*1 rem top from the fix position*/
+  right: 1rem;
+  /* 1 rem right from the position*/
+  width: 30px;
+  height: 30px;
+  color: #ececec;
+  cursor: pointer;
+  /*cursor pointing for a link*/
+  transition: 0.3s;
+  /* transition duration*/
 }
 
 /* mouse hovering*/
 .close:hover {
-    opacity: .5;
+  opacity: 0.5;
 }
 
 /*media queries for screen of maximum width 600px
 This is for mobile screen*/
-*/ @media (max-width: 600px) {
-    .card-content {
-        flex-direction: column;
-    }
+@media (max-width: 600px) {
+  .card-content {
+    flex-direction: column;
+  }
 
-    /*class for content on the right*/
-    .right {
-        flex-direction: row;
-        /*items directed towards row*/
-        text-align: center;
-        justify-content: space-around;
-        /*alignment along the main axis around the items*/
-        align-items: center;
-        margin: 0;
-    }
+  /*class for content on the right*/
+  .right {
+    flex-direction: row;
+    /*items directed towards row*/
+    text-align: center;
+    justify-content: space-around;
+    /*alignment along the main axis around the items*/
+    align-items: center;
+    margin: 0;
+  }
 }
 
 /*media queries for screen which have maximum of 380 px width*/
 @media (max-width: 380px) {
-    .header {
-        height: 230px;
-    }
+  .header {
+    height: 230px;
+  }
 
-    .main .image {
-        width: 90px;
-        height: 90px;
-        border-width: 3px;
-    }
+  .main .image {
+    width: 90px;
+    height: 90px;
+    border-width: 3px;
+  }
 
-    /*class for name and sub title*/
-    .name,
-    .sub-name {
-        font-size: 1rem;
-        /*font size reduced*/
-    }
+  /*class for name and sub title*/
+  .name,
+  .sub-name {
+    font-size: 1rem;
+    /*font size reduced*/
+  }
 
-    /*card-content on smaller screen*/
-    .card-content {
-        padding: 1.2rem 1.8rem 1.8rem 1.8rem;
-    }
+  /*card-content on smaller screen*/
+  .card-content {
+    padding: 1.2rem 1.8rem 1.8rem 1.8rem;
+  }
 
-    /*number on the right hand side*/
-    .num {
-        font-size: 1.7rem;
-    }
+  /*number on the right hand side*/
+  .num {
+    font-size: 1.7rem;
+  }
 
-    /*number subtitle on the right hand side*/
-    .num-sub {
-        font-size: .5rem;
-        /*font size on smaller screen*/
-    }
+  /*number subtitle on the right hand side*/
+  .num-sub {
+    font-size: 0.5rem;
+    /*font size on smaller screen*/
+  }
 
-    /*content on the right padding top*/
-    .right {
-        padding-top: 1rem;
-    }
+  /*content on the right padding top*/
+  .right {
+    padding-top: 1rem;
+  }
 
-    /*about heading on smaller screen*/
-    .title-about {
-        font-size: .9rem;
-        margin-bottom: .5rem;
-        /*bottom margin on smalller screen*/
-    }
+  /*about heading on smaller screen*/
+  .title-about {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    /*bottom margin on smalller screen*/
+  }
 
-    /*on smaller screen, description font size*/
-    .desc {
-        font-size: .9rem;
-    }
+  /*on smaller screen, description font size*/
+  .desc {
+    font-size: 0.9rem;
+  }
 
-    /*icon padding on smaller screen*/
-    .icon-container {
-        padding: .4rem 0;
-    }
+  /*icon padding on smaller screen*/
+  .icon-container {
+    padding: 0.4rem 0;
+  }
 
-    /*icon size*/
-    .icon {
-        font-size: 1.2rem;
-    }
+  /*icon size*/
+  .icon {
+    font-size: 1.2rem;
+  }
 
-    /* get cv button text*/
-    .resume {
-        padding: 5.5px 0;
-        /*padding of the text*/
-        border-radius: 14.5px;
-        /*outer border edge round shape*/
-        font-size: .6rem;
-    }
+  /* get cv button text*/
+  .resume {
+    padding: 5.5px 0;
+    /*padding of the text*/
+    border-radius: 14.5px;
+    /*outer border edge round shape*/
+    font-size: 0.6rem;
+  }
 }
