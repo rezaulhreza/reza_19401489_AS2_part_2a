@@ -20,8 +20,10 @@ body {
   align-items: center;
   min-height: 100vh;
   /*100 vh as min height*/
-  background-image: linear-gradient(to top, #024572a8, #00b6fe94);
-  /*background color set as linear gradient creating two color types*/
+ background: #ff4b1f;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #1fddff, #ff4b1f);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #1fddff, #ff4b1f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 /*main card*/
